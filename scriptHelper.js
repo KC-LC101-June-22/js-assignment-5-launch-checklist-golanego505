@@ -66,7 +66,7 @@ function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
     let fuelPrompt = document.querySelector("#fuelStatus");
     let cargoPrompt = document.querySelector("#cargoStatus");
     let launchPrompt = document.querySelector("#launchStatus");
-    if (fuelPrompt.textContent === "Fuel level too low for launch" || cargoPrompt.textContent === "Cargo mass too high for launch") {
+    if (fuelPrompt.textContent === "Fuel level too low for launch" || cargoPrompt.textContent === "Cargo mass too heavy for launch") {
 
         launchPrompt.textContent = "Shuttle Not Ready for Launch"
         launchPrompt.style.color = "rgb(199, 37, 78)"
