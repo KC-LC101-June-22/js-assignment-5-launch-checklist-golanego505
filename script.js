@@ -7,13 +7,15 @@
 
 window.addEventListener("load", function () {
     let form = document.querySelector("form");
+    let list = document.querySelector("#faultyItems")
+    list.style.visibility = "visible";
     form.addEventListener("submit", function (event) {
         event.preventDefault();
         let pilot = document.querySelector("input[name=pilotName]");
         let copilot = document.querySelector("input[name=copilotName");
         let fuelLevel = document.querySelector("input[name=fuelLevel");
         let cargoLevel = document.querySelector("input[name=cargoMass");
-        let list = document.querySelector("#faultyItems")
+        
 
         let formIsValid = formSubmission(document, list, pilot.value, copilot.value, fuelLevel.value, cargoLevel.value)
         if (formIsValid === true) {
