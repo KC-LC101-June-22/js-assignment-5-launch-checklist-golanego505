@@ -53,7 +53,7 @@ function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
     }
     if (Number(cargoLevel) > 10000) {
         let cargoPrompt = document.querySelector("#cargoStatus");
-        cargoPrompt.textContent = "Cargo level too high for launch";
+        cargoPrompt.textContent = "Cargo mass too heavy for launch";
     } else {
         let cargoPrompt = document.querySelector("#cargoStatus");
         cargoPrompt.textContent = "Cargo mass low enough for launch";
