@@ -1,6 +1,6 @@
 // Write your helper functions here!
 require('isomorphic-fetch');
-
+list.style.visibility = "visible";
 function addDestinationInfo(document, name, diameter, star, distance, moons, imageUrl) {
     // Here is the HTML formatting for our mission target div.
     let missionPrompt = document.querySelector("#missionTarget");
