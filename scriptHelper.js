@@ -72,8 +72,8 @@ function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
         launchPrompt.style.color = "rgb(199, 37, 78)"
         return false
     } else {
-        launchPrompt.textContent = "Shuttle is ready for launch"
-        launchPrompt.style.color = "green"
+        launchPrompt.textContent = "Shuttle is Ready for Launch"
+        launchPrompt.style.color = "rgb(65, 159, 106)"
     }
     return true
 }
